@@ -1,11 +1,10 @@
-// components/TopNav.tsx
-import Image from "next/image";
+"use client";
 
-export default function TopNav({
-  user,
-}: {
-  user: { name: string; pictureUrl: string } | undefined;
-}) {
+import Image from "next/image";
+import { useUser } from "../context/UserContext";
+
+export default function TopNav() {
+  const user = useUser();
   //   console.log("user", user);
 
   return (
@@ -19,7 +18,7 @@ export default function TopNav({
           height={40}
           className="rounded-full"
         />
-        <span className="font-medium">{user?.name ?? "-"}</span>
+        <span className="font-medium">{user?.displayName ?? "-"}</span>
       </div>
     </nav>
   );
