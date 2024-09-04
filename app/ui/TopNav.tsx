@@ -13,7 +13,7 @@ export default function TopNav({
       <div className="text-xl font-bold">BB Pragan</div>
       <div className="flex items-center space-x-4">
         <Image
-          src={user?.pictureUrl ?? "/default-profile.png"}
+          src={user?.pictureUrl ?? "/avatar.png"}
           alt="Profile Picture"
           width={40}
           height={40}
