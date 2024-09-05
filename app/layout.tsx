@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Sarabun } from "next/font/google";
 import { UserProvider } from "./context/UserContext";
 import "./globals.css";
-import TopNav from "./ui/TopNav";
+import BottomBar from "./ui/BottomBar";
 
 const sarabun = Sarabun({
   subsets: ["latin", "thai"],
@@ -21,8 +21,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${sarabun.className} min-h-screen bg-gray-100`}>
         <UserProvider>
-          <TopNav />
           <main className="p-8">{children}</main>
+          <BottomBar />
         </UserProvider>
       </body>
     </html>
