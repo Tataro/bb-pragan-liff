@@ -9,7 +9,7 @@ export default function TopNav() {
 
   return (
     <nav className="flex justify-between items-center bg-white p-4 shadow-md">
-      <div className="text-xl font-bold">BB Pragan</div>
+      <div className="text-xl font-bold">BB Pragun</div>
       <div className="flex items-center space-x-4">
         <Image
           src={user?.pictureUrl ?? "/avatar.png"}
